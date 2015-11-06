@@ -9,18 +9,20 @@ var width = $('.galimg').width();
 
 $('.galimg').css('height', width);
 
-var imgW = $('.galimg img').each(function(){
-				$(this).css('width');
-			});
 
 
-var imgH =$('.galimg img').each(function(){
-				$(this).css('height');
-			});
+$('.galimg img').each(function(e){
+	var imgW = $('.galimg img').css('width');
+	var imgH = $('.galimg img').css('height');
 
-// if ( imgW > imgH ){
-// 	$('.galimg img').addClass('landscape')
-// }
-// else if ( imgW < imgH ){
-// 	$('.galimg img').addClass('portrait')
-// }
+
+	if ( imgW > imgH ){
+		$('.galimg img').addClass('landscape')
+	}
+	else if ( imgW < imgH ){
+		$('.galimg img').addClass('portrait')
+	}
+
+
+
+});
