@@ -1,23 +1,17 @@
-$('.galimg img').each(function(e){
+// $('.galimg img').each(function(e){
 
-	console.log( $(this).css('width') );
-	console.log( $(this).css('height') )
+// 	console.log( $(this).css('width') );
+// 	console.log( $(this).css('height') )
 
-});
+// });
 
-var width = $('.galimg img').each(function(){
-		$(this).css('width');
-});
+var width = $('.galimg').width();
 
-var height = $('.galimg img').each(function(){
-		$(this).css('height');
-});
+$('.galimg').css('height', width);
 
+// if (){
 
-if (width > height){
-	$('.galimg').addClass('.landscape');
-}
+// };
+// else if (){
 
-else if (width < height){
-	$('.galimg').addClass('.portrait');
-}
+// };
